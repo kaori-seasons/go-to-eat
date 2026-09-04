@@ -1,0 +1,78 @@
+<h1 align="center">Where to Eat</h1>
+
+<p align="center">
+  <strong>Find a restaurant that is fairer for the whole group, using real travel times.</strong><br />
+  <em>多人聚餐，按真实到店路线找到更公平的餐厅。</em>
+</p>
+
+<p align="center">
+  <img alt="Cloudflare Pages" src="https://img.shields.io/badge/Cloudflare-Pages-F38020?logo=cloudflare&logoColor=white" />
+  <img alt="Amap" src="https://img.shields.io/badge/Map-Amap-00A6A6" />
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-green" />
+</p>
+
+---
+
+Most “find a middle point” tools stop at an abstract coordinate. Group dining ends at a restaurant: everyone needs a workable route, the slowest trip matters, and the suggestion must be explainable.
+
+Where to Eat searches food-matched restaurants, calculates complete routes for every participant, and returns one primary recommendation with up to two alternatives. Its default strategy minimizes the slowest participant's travel time; smallest time spread and lowest average time are also available.
+
+> Currently supports Beijing, Shanghai, Guangzhou, and Shenzhen, for groups of 2–5 participants.
+
+## ✨ Features
+
+- Restaurant-first recommendation based on complete participant routes.
+- Three fairness strategies: smallest maximum travel time, smallest spread, or lowest average.
+- Ambiguous locations resolve as metro station, bus stop, then original place, with the result shown to users.
+- Transit instructions include boarding station, line, transfer station, alighting station, and final walk.
+- Food preference is part of candidate search; rating is not the primary ranking signal.
+- A user-provided Amap key is required for every request and is used only for that request.
+- A conversational MCP Skill and a Cloudflare Pages web service with Pages Functions.
+
+## 🚀 Deploy to Cloudflare Pages
+
+Create an Amap Web Service key with geocoding, route planning, and POI search enabled, then run:
+
+```bash
+git clone https://github.com/kaori-seasons/go-to-eat.git
+cd where-to-eat
+wrangler pages project create where-to-eat --production-branch main
+wrangler pages deploy web --project-name where-to-eat
+```
+
+Cloudflare Pages serves the static site and Pages Functions serve `/api/recommend` from one origin. There is no default Amap key; every request must include the key entered on the page.
+
+The “Amap Web Service key” field is required. The submitted key is used for this request only and is not stored in the browser, URL, Pages storage, or logs.
+
+See [WEB_DEPLOYMENT.md](WEB_DEPLOYMENT.md) for local development, deployment, request budgets, and operational guidance.
+
+## 🧭 How It Works
+
+```text
+Participants + food preference
+  -> resolve locations
+  -> search candidate restaurants around transport-balanced areas
+  -> calculate complete routes for every participant
+  -> rank by the selected fairness strategy
+  -> one primary restaurant + up to two alternatives
+```
+
+When an arrival time is supplied, the app suggests departure times using route duration plus a five-minute buffer. API route times are query-time values and do not promise future traffic conditions.
+
+## 📁 Structure
+
+```text
+where-to-eat/
+├── web/                    # Static frontend
+├── functions/lib/          # Shared API logic
+├── functions/api/          # Pages Functions routes
+├── wrangler.jsonc          # Pages Functions configuration
+├── SKILL.md                # Conversational MCP workflow
+├── WEB_DEPLOYMENT.md       # Local development and Cloudflare deployment
+├── references/             # Algorithm and Amap MCP references
+└── scripts/
+```
+
+## 📄 License
+
+[MIT](LICENSE) 由风轮制作
