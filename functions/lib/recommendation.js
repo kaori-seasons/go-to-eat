@@ -2,9 +2,9 @@ const MAX_PARTICIPANTS = 5;
 const MAX_CANDIDATES = 3;
 const RESTAURANTS_PER_SEED = 5;
 const MAX_RESTAURANT_DETAILS = 9;
-const SUPPORTED_CITIES = new Set(["北京", "上海", "广州", "深圳"]);
+const SUPPORTED_CITIES = new Set(["北京", "上海", "广州", "深圳", "厦门"]);
 const SUPPORTED_MODES = new Set(["driving", "transit", "bicycle"]);
-const CITY_ADCODE_PREFIX = { "北京": "11", "上海": "31", "广州": "4401", "深圳": "4403" };
+const CITY_ADCODE_PREFIX = { "北京": "11", "上海": "31", "广州": "4401", "深圳": "4403", "厦门": "3502" };
 const STRATEGIES = new Set(["spread", "max", "average"]);
 
 export async function handleRecommendation(request) {
@@ -32,7 +32,7 @@ export async function handleRecommendation(request) {
 
 function validatePayload(payload) {
   if (!payload || typeof payload !== "object") throw new Error("payload must be an object");
-  if (!SUPPORTED_CITIES.has(payload.city)) throw new Error("city must be one of: 北京, 上海, 广州, 深圳");
+  if (!SUPPORTED_CITIES.has(payload.city)) throw new Error("city must be one of: 北京, 上海, 广州, 深圳, 厦门");
   if (!Array.isArray(payload.participants) || payload.participants.length < 2 || payload.participants.length > MAX_PARTICIPANTS) throw new Error("participants must contain 2-5 people");
   if (!payload.participants.every(person => person && typeof person.location === "string" && person.location.trim())) throw new Error("each participant needs a location");
   if (!Array.isArray(payload.modes) || !payload.modes.length || !payload.modes.every(mode => SUPPORTED_MODES.has(mode))) throw new Error("select one or more supported transport modes");
