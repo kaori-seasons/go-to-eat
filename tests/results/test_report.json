@@ -1,0 +1,367 @@
+{
+  "test_summary": {
+    "test_date": "2026-09-05T10:47:52.290740",
+    "total_test_cases": 10,
+    "models_tested": [
+      "MiniCPM5-2B",
+      "Kimi-2.5"
+    ],
+    "test_categories": [
+      "D1-工具识别",
+      "D2-参数提取",
+      "D3-参数验证",
+      "D4-多工具编排",
+      "D5-条件分支",
+      "D6-错误恢复",
+      "D7-并行调用",
+      "D8-上下文保持",
+      "D9-结果整合",
+      "D10-约束遵守"
+    ]
+  },
+  "model_metrics": {
+    "MiniCPM5-2B": {
+      "tool_accuracy": 0.5751746031746032,
+      "param_accuracy": 0.843,
+      "sequence_accuracy": 0.6667460317460318,
+      "error_recovery": 0.95,
+      "response_time_ms": 127.75421142578125,
+      "context_retention": 0.985,
+      "compliance_score": 0.898,
+      "weighted_score": 1356.787669813368
+    },
+    "Kimi-2.5": {
+      "tool_accuracy": 0.6251746031746033,
+      "param_accuracy": 0.843,
+      "sequence_accuracy": 0.7167460317460318,
+      "error_recovery": 0.9800000000000001,
+      "response_time_ms": 143.26751232147217,
+      "context_retention": 0.985,
+      "compliance_score": 0.898,
+      "weighted_score": 1514.3706787702772
+    }
+  },
+  "comparison": {
+    "summary": {
+      "minicpm_weighted_score": 1356.787669813368,
+      "kimi_weighted_score": 1514.3706787702772,
+      "winner": "Kimi 2.5",
+      "score_difference": 157.58300895690923
+    },
+    "detailed_comparison": {
+      "tool_accuracy": {
+        "minicpm": 0.5751746031746032,
+        "kimi": 0.6251746031746033,
+        "difference": 0.050000000000000044,
+        "winner": "Kimi"
+      },
+      "param_accuracy": {
+        "minicpm": 0.843,
+        "kimi": 0.843,
+        "difference": 0.0,
+        "winner": "MiniCPM"
+      },
+      "sequence_accuracy": {
+        "minicpm": 0.6667460317460318,
+        "kimi": 0.7167460317460318,
+        "difference": 0.050000000000000044,
+        "winner": "Kimi"
+      },
+      "error_recovery": {
+        "minicpm": 0.95,
+        "kimi": 0.9800000000000001,
+        "difference": 0.030000000000000138,
+        "winner": "Kimi"
+      },
+      "response_time": {
+        "minicpm_ms": 127.75421142578125,
+        "kimi_ms": 143.26751232147217,
+        "difference_ms": 15.513300895690918,
+        "winner": "MiniCPM"
+      },
+      "context_retention": {
+        "minicpm": 0.985,
+        "kimi": 0.985,
+        "difference": 0.0,
+        "winner": "MiniCPM"
+      },
+      "compliance": {
+        "minicpm": 0.898,
+        "kimi": 0.898,
+        "difference": 0.0,
+        "winner": "MiniCPM"
+      }
+    },
+    "recommendation": {
+      "overall": "Kimi 2.5在综合能力上表现更优",
+      "latency": "MiniCPM5-2B响应更快，适合低延迟场景",
+      "reliability": "Kimi 2.5错误恢复能力更强，适合生产环境"
+    }
+  },
+  "detailed_results": {
+    "MiniCPM5-2B": [
+      {
+        "test_id": "TC-001",
+        "test_name": "单工具识别",
+        "model_name": "MiniCPM5-2B",
+        "tool_accuracy": 1.0,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 1.0,
+        "error_recovery": 1.0,
+        "response_time_ms": 51.12910270690918,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-002",
+        "test_name": "多参数提取",
+        "model_name": "MiniCPM5-2B",
+        "tool_accuracy": 0.6666666666666666,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 0.3333333333333333,
+        "error_recovery": 1.0,
+        "response_time_ms": 102.35190391540527,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-003",
+        "test_name": "边界参数验证",
+        "model_name": "MiniCPM5-2B",
+        "tool_accuracy": 1.0,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 1.0,
+        "error_recovery": 1.0,
+        "response_time_ms": 52.08587646484375,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-004",
+        "test_name": "顺序依赖编排",
+        "model_name": "MiniCPM5-2B",
+        "tool_accuracy": 0.4,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 0.6,
+        "error_recovery": 1.0,
+        "response_time_ms": 152.94218063354492,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-005",
+        "test_name": "条件分支决策",
+        "model_name": "MiniCPM5-2B",
+        "tool_accuracy": 0.5,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 0.75,
+        "error_recovery": 1.0,
+        "response_time_ms": 153.3050537109375,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-006",
+        "test_name": "API调用失败恢复",
+        "model_name": "MiniCPM5-2B",
+        "tool_accuracy": 0.5,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 0.75,
+        "error_recovery": 0.5,
+        "response_time_ms": 153.57398986816406,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-007",
+        "test_name": "独立工具并行执行",
+        "model_name": "MiniCPM5-2B",
+        "tool_accuracy": 0.14285714285714285,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 0.42857142857142855,
+        "error_recovery": 1.0,
+        "response_time_ms": 153.46670150756836,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-008",
+        "test_name": "多轮对话状态保持",
+        "model_name": "MiniCPM5-2B",
+        "tool_accuracy": 0.82,
+        "param_accuracy": 0.78,
+        "sequence_accuracy": 0.75,
+        "error_recovery": 1.0,
+        "response_time_ms": 153.1047821044922,
+        "context_retention": 0.85,
+        "compliance_score": 0.88,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-009",
+        "test_name": "端到端推荐流程",
+        "model_name": "MiniCPM5-2B",
+        "tool_accuracy": 0.2222222222222222,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 0.5555555555555556,
+        "error_recovery": 1.0,
+        "response_time_ms": 255.1736831665039,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-010",
+        "test_name": "多约束条件遵守",
+        "model_name": "MiniCPM5-2B",
+        "tool_accuracy": 0.5,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 0.5,
+        "error_recovery": 1.0,
+        "response_time_ms": 50.40884017944336,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      }
+    ],
+    "Kimi-2.5": [
+      {
+        "test_id": "TC-001",
+        "test_name": "单工具识别",
+        "model_name": "Kimi-2.5",
+        "tool_accuracy": 1.0,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 1.0,
+        "error_recovery": 1.0,
+        "response_time_ms": 51.163673400878906,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-002",
+        "test_name": "多参数提取",
+        "model_name": "Kimi-2.5",
+        "tool_accuracy": 0.6666666666666666,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 0.3333333333333333,
+        "error_recovery": 1.0,
+        "response_time_ms": 153.7621021270752,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-003",
+        "test_name": "边界参数验证",
+        "model_name": "Kimi-2.5",
+        "tool_accuracy": 1.0,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 1.0,
+        "error_recovery": 1.0,
+        "response_time_ms": 51.32007598876953,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-004",
+        "test_name": "顺序依赖编排",
+        "model_name": "Kimi-2.5",
+        "tool_accuracy": 0.4,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 0.6,
+        "error_recovery": 1.0,
+        "response_time_ms": 152.43816375732422,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-005",
+        "test_name": "条件分支决策",
+        "model_name": "Kimi-2.5",
+        "tool_accuracy": 0.75,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 1.0,
+        "error_recovery": 1.0,
+        "response_time_ms": 205.10196685791016,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-006",
+        "test_name": "API调用失败恢复",
+        "model_name": "Kimi-2.5",
+        "tool_accuracy": 0.75,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 1.0,
+        "error_recovery": 0.8,
+        "response_time_ms": 205.0340175628662,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-007",
+        "test_name": "独立工具并行执行",
+        "model_name": "Kimi-2.5",
+        "tool_accuracy": 0.14285714285714285,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 0.42857142857142855,
+        "error_recovery": 1.0,
+        "response_time_ms": 153.20515632629395,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-008",
+        "test_name": "多轮对话状态保持",
+        "model_name": "Kimi-2.5",
+        "tool_accuracy": 0.82,
+        "param_accuracy": 0.78,
+        "sequence_accuracy": 0.75,
+        "error_recovery": 1.0,
+        "response_time_ms": 153.71346473693848,
+        "context_retention": 0.85,
+        "compliance_score": 0.88,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-009",
+        "test_name": "端到端推荐流程",
+        "model_name": "Kimi-2.5",
+        "tool_accuracy": 0.2222222222222222,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 0.5555555555555556,
+        "error_recovery": 1.0,
+        "response_time_ms": 255.61761856079102,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      },
+      {
+        "test_id": "TC-010",
+        "test_name": "多约束条件遵守",
+        "model_name": "Kimi-2.5",
+        "tool_accuracy": 0.5,
+        "param_accuracy": 0.85,
+        "sequence_accuracy": 0.5,
+        "error_recovery": 1.0,
+        "response_time_ms": 51.31888389587402,
+        "context_retention": 1.0,
+        "compliance_score": 0.9,
+        "raw_data": {}
+      }
+    ]
+  }
+}

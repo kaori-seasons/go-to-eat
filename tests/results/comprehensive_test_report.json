@@ -1,0 +1,2141 @@
+{
+  "test_summary": {
+    "test_date": "2026-09-05T11:14:25.119915",
+    "total_tests": 52,
+    "successful_tests": 51,
+    "success_rate": 0.9807692307692307,
+    "total_api_calls": 173,
+    "avg_api_response_time_ms": 1884.3206780494293,
+    "api_success_rate": 0.9942196531791907
+  },
+  "category_breakdown": {
+    "D1-工具识别": {
+      "total": 31,
+      "success": 30,
+      "time": 53567.28005409241
+    },
+    "D4-多工具编排": {
+      "total": 8,
+      "success": 8,
+      "time": 93201.2574672699
+    },
+    "D9-结果整合": {
+      "total": 8,
+      "success": 8,
+      "time": 17874.091148376465
+    },
+    "D10-约束遵守": {
+      "total": 5,
+      "success": 5,
+      "time": 161861.21082305908
+    }
+  },
+  "api_statistics": {
+    "total_calls": 173,
+    "endpoint_counts": {
+      "geocode/geo": 63,
+      "direction/driving": 46,
+      "direction/transit/integrated": 46,
+      "place/text": 13,
+      "geocode/regeo": 5
+    },
+    "avg_response_time_ms": 1884.3206780494293,
+    "success_rate": 0.9942196531791907
+  },
+  "detailed_results": [
+    {
+      "test_id": "GEO-北京-001",
+      "test_name": "地理编码: 望京",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "望京",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 2617.8059577941895,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 2617.8059577941895,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-002",
+      "test_name": "地理编码: 望京地铁站",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "望京地铁站",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1624.039888381958,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1624.039888381958,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-003",
+      "test_name": "地理编码: 霍营",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "霍营",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 2662.5921726226807,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 2662.5921726226807,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-004",
+      "test_name": "地理编码: 霍营地铁站",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "霍营地铁站",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1630.2528381347656,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1630.2528381347656,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-005",
+      "test_name": "地理编码: 朱辛庄",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "朱辛庄",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1592.5230979919434,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1592.5230979919434,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-006",
+      "test_name": "地理编码: 朱辛庄地铁站",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "朱辛庄地铁站",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1632.9832077026367,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1632.9832077026367,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-007",
+      "test_name": "地理编码: 天通苑",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "天通苑",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1790.7218933105469,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1790.7218933105469,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-008",
+      "test_name": "地理编码: 天通苑地铁站",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "天通苑地铁站",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1649.9109268188477,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1649.9109268188477,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-009",
+      "test_name": "地理编码: 国贸",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "国贸",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1687.9527568817139,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1687.9527568817139,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-010",
+      "test_name": "地理编码: 西直门",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "西直门",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1624.7498989105225,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1624.7498989105225,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-011",
+      "test_name": "地理编码: 五道口",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "五道口",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1569.5092678070068,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1569.5092678070068,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-012",
+      "test_name": "地理编码: 中关村",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "中关村",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1636.857032775879,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1636.857032775879,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-013",
+      "test_name": "地理编码: 三里屯",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "三里屯",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1621.9708919525146,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1621.9708919525146,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-014",
+      "test_name": "地理编码: 王府井",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "王府井",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1553.9829730987549,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1553.9829730987549,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-015",
+      "test_name": "地理编码: 西单",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "西单",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1578.6821842193604,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1578.6821842193604,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-016",
+      "test_name": "地理编码: 回龙观",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "回龙观",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1506.9787502288818,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1506.9787502288818,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-017",
+      "test_name": "地理编码: 立水桥",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "立水桥",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1595.0417518615723,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1595.0417518615723,
+        "accuracy": 0.5
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-018",
+      "test_name": "地理编码: 北苑",
+      "category": "D1-工具识别",
+      "success": false,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "北苑",
+            "city": "北京"
+          },
+          "success": false
+        }
+      ],
+      "execution_time_ms": 1608.78324508667,
+      "metrics": {
+        "success": 0.0,
+        "has_results": 0.0,
+        "response_time_ms": 1608.78324508667,
+        "accuracy": 0.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-019",
+      "test_name": "地理编码: 大望路",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "大望路",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1507.2271823883057,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1507.2271823883057,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-北京-020",
+      "test_name": "地理编码: 双井",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "双井",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 2171.527147293091,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 2171.527147293091,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-上海-001",
+      "test_name": "地理编码: 陆家嘴",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "陆家嘴",
+            "city": "上海"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 2668.267011642456,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 2668.267011642456,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-上海-002",
+      "test_name": "地理编码: 人民广场",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "人民广场",
+            "city": "上海"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1554.8489093780518,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1554.8489093780518,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-上海-003",
+      "test_name": "地理编码: 南京路",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "南京路",
+            "city": "上海"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1493.8209056854248,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1493.8209056854248,
+        "accuracy": 0.5
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-上海-004",
+      "test_name": "地理编码: 徐家汇",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "徐家汇",
+            "city": "上海"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1654.4389724731445,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1654.4389724731445,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-上海-005",
+      "test_name": "地理编码: 虹桥",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "虹桥",
+            "city": "上海"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1712.4509811401367,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1712.4509811401367,
+        "accuracy": 0.5
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-广州-001",
+      "test_name": "地理编码: 天河城",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "天河城",
+            "city": "广州"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1634.9689960479736,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1634.9689960479736,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-广州-002",
+      "test_name": "地理编码: 珠江新城",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "珠江新城",
+            "city": "广州"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1533.362865447998,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1533.362865447998,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-广州-003",
+      "test_name": "地理编码: 北京路",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "北京路",
+            "city": "广州"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1683.9721202850342,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1683.9721202850342,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-深圳-001",
+      "test_name": "地理编码: 南山",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "南山",
+            "city": "深圳"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1518.0323123931885,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1518.0323123931885,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-深圳-002",
+      "test_name": "地理编码: 福田",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "福田",
+            "city": "深圳"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1692.0020580291748,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1692.0020580291748,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "GEO-深圳-003",
+      "test_name": "地理编码: 罗湖",
+      "category": "D1-工具识别",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "罗湖",
+            "city": "深圳"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1557.0218563079834,
+      "metrics": {
+        "success": 1.0,
+        "has_results": 1.0,
+        "response_time_ms": 1557.0218563079834,
+        "accuracy": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "ROUTE-北京-001",
+      "test_name": "路线规划: 望京 → 霍营",
+      "category": "D4-多工具编排",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.368207,40.076214"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.368207,40.076214",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 7601.5119552612305,
+      "metrics": {
+        "success": 1.0,
+        "route_success_rate": 1.0,
+        "response_time_ms": 7601.5119552612305,
+        "avg_time_per_route": 7601.5119552612305
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "ROUTE-北京-002",
+      "test_name": "路线规划: 国贸 → 中关村",
+      "category": "D4-多工具编排",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.458850,39.909860",
+            "destination": "116.318620,39.980047"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.458850,39.909860",
+            "destination": "116.318620,39.980047",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 7621.9587326049805,
+      "metrics": {
+        "success": 1.0,
+        "route_success_rate": 1.0,
+        "response_time_ms": 7621.9587326049805,
+        "avg_time_per_route": 7621.9587326049805
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "ROUTE-北京-003",
+      "test_name": "路线规划: 五道口 → 西直门",
+      "category": "D4-多工具编排",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.339311,39.991327",
+            "destination": "116.346661,39.942856"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.339311,39.991327",
+            "destination": "116.346661,39.942856",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 8081.831932067871,
+      "metrics": {
+        "success": 1.0,
+        "route_success_rate": 1.0,
+        "response_time_ms": 8081.831932067871,
+        "avg_time_per_route": 8081.831932067871
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "ROUTE-北京-004",
+      "test_name": "路线规划: 天通苑 → 三里屯",
+      "category": "D4-多工具编排",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.454118,39.935589"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.454118,39.935589",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 7142.259836196899,
+      "metrics": {
+        "success": 1.0,
+        "route_success_rate": 1.0,
+        "response_time_ms": 7142.259836196899,
+        "avg_time_per_route": 7142.259836196899
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "ROUTE-北京-005",
+      "test_name": "路线规划: 望京 → 霍营 → 朱辛庄",
+      "category": "D4-多工具编排",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.368207,40.076214"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.368207,40.076214",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.306005,40.091268"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.306005,40.091268",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 14120.058059692383,
+      "metrics": {
+        "success": 1.0,
+        "route_success_rate": 1.0,
+        "response_time_ms": 14120.058059692383,
+        "avg_time_per_route": 7060.029029846191
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "ROUTE-北京-006",
+      "test_name": "路线规划: 国贸 → 中关村 → 五道口",
+      "category": "D4-多工具编排",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.458850,39.909860",
+            "destination": "116.318620,39.980047"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.458850,39.909860",
+            "destination": "116.318620,39.980047",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.318620,39.980047",
+            "destination": "116.339311,39.991327"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.318620,39.980047",
+            "destination": "116.339311,39.991327",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 12461.827039718628,
+      "metrics": {
+        "success": 1.0,
+        "route_success_rate": 1.0,
+        "response_time_ms": 12461.827039718628,
+        "avg_time_per_route": 6230.913519859314
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "ROUTE-北京-007",
+      "test_name": "路线规划: 天通苑 → 回龙观 → 立水桥",
+      "category": "D4-多工具编排",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.324618,40.064687"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.324618,40.064687",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.324618,40.064687",
+            "destination": "116.414350,40.056198"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.324618,40.064687",
+            "destination": "116.414350,40.056198",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 14940.215826034546,
+      "metrics": {
+        "success": 1.0,
+        "route_success_rate": 1.0,
+        "response_time_ms": 14940.215826034546,
+        "avg_time_per_route": 7470.107913017273
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "ROUTE-北京-008",
+      "test_name": "路线规划: 望京 → 霍营 → 朱辛庄 → 天通苑",
+      "category": "D4-多工具编排",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.368207,40.076214"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.368207,40.076214",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.306005,40.091268"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.306005,40.091268",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.306005,40.091268",
+            "destination": "116.422633,40.067359"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.306005,40.091268",
+            "destination": "116.422633,40.067359",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 21231.59408569336,
+      "metrics": {
+        "success": 1.0,
+        "route_success_rate": 1.0,
+        "response_time_ms": 21231.59408569336,
+        "avg_time_per_route": 7077.198028564453
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "SEARCH-北京-001",
+      "test_name": "餐厅搜索: 日料",
+      "category": "D9-结果整合",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "place/text",
+          "params": {
+            "keywords": "日料",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1821.8889236450195,
+      "metrics": {
+        "success": 1.0,
+        "result_count": 20,
+        "response_time_ms": 1821.8889236450195,
+        "has_restaurants": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "SEARCH-北京-002",
+      "test_name": "餐厅搜索: 火锅",
+      "category": "D9-结果整合",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "place/text",
+          "params": {
+            "keywords": "火锅",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 2464.956283569336,
+      "metrics": {
+        "success": 1.0,
+        "result_count": 20,
+        "response_time_ms": 2464.956283569336,
+        "has_restaurants": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "SEARCH-北京-003",
+      "test_name": "餐厅搜索: 烤肉",
+      "category": "D9-结果整合",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "place/text",
+          "params": {
+            "keywords": "烤肉",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 2606.97603225708,
+      "metrics": {
+        "success": 1.0,
+        "result_count": 20,
+        "response_time_ms": 2606.97603225708,
+        "has_restaurants": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "SEARCH-北京-004",
+      "test_name": "餐厅搜索: 川菜",
+      "category": "D9-结果整合",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "place/text",
+          "params": {
+            "keywords": "川菜",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1807.6400756835938,
+      "metrics": {
+        "success": 1.0,
+        "result_count": 20,
+        "response_time_ms": 1807.6400756835938,
+        "has_restaurants": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "SEARCH-北京-005",
+      "test_name": "餐厅搜索: 粤菜",
+      "category": "D9-结果整合",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "place/text",
+          "params": {
+            "keywords": "粤菜",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 2382.833957672119,
+      "metrics": {
+        "success": 1.0,
+        "result_count": 20,
+        "response_time_ms": 2382.833957672119,
+        "has_restaurants": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "SEARCH-北京-006",
+      "test_name": "餐厅搜索: 湘菜",
+      "category": "D9-结果整合",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "place/text",
+          "params": {
+            "keywords": "湘菜",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1924.3700504302979,
+      "metrics": {
+        "success": 1.0,
+        "result_count": 20,
+        "response_time_ms": 1924.3700504302979,
+        "has_restaurants": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "SEARCH-北京-007",
+      "test_name": "餐厅搜索: 西餐",
+      "category": "D9-结果整合",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "place/text",
+          "params": {
+            "keywords": "西餐",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 2971.9507694244385,
+      "metrics": {
+        "success": 1.0,
+        "result_count": 20,
+        "response_time_ms": 2971.9507694244385,
+        "has_restaurants": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "SEARCH-北京-008",
+      "test_name": "餐厅搜索: 烧烤",
+      "category": "D9-结果整合",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "place/text",
+          "params": {
+            "keywords": "烧烤",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 1893.47505569458,
+      "metrics": {
+        "success": 1.0,
+        "result_count": 20,
+        "response_time_ms": 1893.47505569458,
+        "has_restaurants": 1.0
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "E2E-北京-001",
+      "test_name": "端到端: 2人烤肉聚餐",
+      "category": "D10-约束遵守",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "望京",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "霍营",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "geocode/regeo",
+          "params": {
+            "location": "116.41925,40.0361925"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "place/text",
+          "params": {
+            "keywords": "烤肉",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.417601,39.940822"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.417601,39.940822",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.417601,39.940822"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.417601,39.940822",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.296471,39.882136"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.296471,39.882136",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.296471,39.882136"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.296471,39.882136",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.385245,39.888155"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.385245,39.888155",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.385245,39.888155"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.385245,39.888155",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 30326.267957687378,
+      "metrics": {
+        "success": 1.0,
+        "restaurants_found": 3,
+        "api_calls": 16,
+        "response_time_ms": 30326.267957687378,
+        "efficiency": 0.1875
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "E2E-北京-002",
+      "test_name": "端到端: 2人烧烤聚餐",
+      "category": "D10-约束遵守",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "国贸",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "中关村",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "geocode/regeo",
+          "params": {
+            "location": "116.388735,39.9449535"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "place/text",
+          "params": {
+            "keywords": "烧烤",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.458850,39.909860",
+            "destination": "116.410262,39.909526"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.458850,39.909860",
+            "destination": "116.410262,39.909526",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.318620,39.980047",
+            "destination": "116.410262,39.909526"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.318620,39.980047",
+            "destination": "116.410262,39.909526",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.458850,39.909860",
+            "destination": "116.410806,39.909649"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.458850,39.909860",
+            "destination": "116.410806,39.909649",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.318620,39.980047",
+            "destination": "116.410806,39.909649"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.318620,39.980047",
+            "destination": "116.410806,39.909649",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.458850,39.909860",
+            "destination": "116.408812,39.899099"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.458850,39.909860",
+            "destination": "116.408812,39.899099",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.318620,39.980047",
+            "destination": "116.408812,39.899099"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.318620,39.980047",
+            "destination": "116.408812,39.899099",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 28610.49199104309,
+      "metrics": {
+        "success": 1.0,
+        "restaurants_found": 3,
+        "api_calls": 16,
+        "response_time_ms": 28610.49199104309,
+        "efficiency": 0.1875
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "E2E-北京-003",
+      "test_name": "端到端: 2人火锅聚餐",
+      "category": "D10-约束遵守",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "五道口",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "西直门",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "geocode/regeo",
+          "params": {
+            "location": "116.342986,39.967091499999995"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "place/text",
+          "params": {
+            "keywords": "火锅",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.339311,39.991327",
+            "destination": "116.421739,39.907405"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.339311,39.991327",
+            "destination": "116.421739,39.907405",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.346661,39.942856",
+            "destination": "116.421739,39.907405"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.346661,39.942856",
+            "destination": "116.421739,39.907405",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.339311,39.991327",
+            "destination": "116.367609,39.932207"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.339311,39.991327",
+            "destination": "116.367609,39.932207",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.346661,39.942856",
+            "destination": "116.367609,39.932207"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.346661,39.942856",
+            "destination": "116.367609,39.932207",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.339311,39.991327",
+            "destination": "116.363329,39.886721"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.339311,39.991327",
+            "destination": "116.363329,39.886721",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.346661,39.942856",
+            "destination": "116.363329,39.886721"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.346661,39.942856",
+            "destination": "116.363329,39.886721",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 29127.724647521973,
+      "metrics": {
+        "success": 1.0,
+        "restaurants_found": 3,
+        "api_calls": 16,
+        "response_time_ms": 29127.724647521973,
+        "efficiency": 0.1875
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "E2E-北京-004",
+      "test_name": "端到端: 2人湘菜聚餐",
+      "category": "D10-约束遵守",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "天通苑",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "三里屯",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "geocode/regeo",
+          "params": {
+            "location": "116.4383755,40.001474"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "place/text",
+          "params": {
+            "keywords": "湘菜",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.452867,39.933111"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.452867,39.933111",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.454118,39.935589",
+            "destination": "116.452867,39.933111"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.454118,39.935589",
+            "destination": "116.452867,39.933111",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.459345,40.011518"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.459345,40.011518",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.454118,39.935589",
+            "destination": "116.459345,40.011518"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.454118,39.935589",
+            "destination": "116.459345,40.011518",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.438425,39.922604"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.438425,39.922604",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.454118,39.935589",
+            "destination": "116.438425,39.922604"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.454118,39.935589",
+            "destination": "116.438425,39.922604",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 29146.947145462036,
+      "metrics": {
+        "success": 1.0,
+        "restaurants_found": 3,
+        "api_calls": 16,
+        "response_time_ms": 29146.947145462036,
+        "efficiency": 0.1875
+      },
+      "error_message": null
+    },
+    {
+      "test_id": "E2E-北京-005",
+      "test_name": "端到端: 3人川菜聚餐",
+      "category": "D10-约束遵守",
+      "success": true,
+      "api_calls": [
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "望京",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "霍营",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "geocode/geo",
+          "params": {
+            "address": "朱辛庄",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "geocode/regeo",
+          "params": {
+            "location": "116.38150166666667,40.054551"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "place/text",
+          "params": {
+            "keywords": "川菜",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.419240,39.941174"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.419240,39.941174",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.419240,39.941174"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.419240,39.941174",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.306005,40.091268",
+            "destination": "116.419240,39.941174"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.306005,40.091268",
+            "destination": "116.419240,39.941174",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.406579,39.991607"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.406579,39.991607",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.406579,39.991607"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.406579,39.991607",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.306005,40.091268",
+            "destination": "116.406579,39.991607"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.306005,40.091268",
+            "destination": "116.406579,39.991607",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.379700,39.901251"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.379700,39.901251",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.379700,39.901251"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.379700,39.901251",
+            "city": "北京"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/driving",
+          "params": {
+            "origin": "116.306005,40.091268",
+            "destination": "116.379700,39.901251"
+          },
+          "success": true
+        },
+        {
+          "endpoint": "direction/transit",
+          "params": {
+            "origin": "116.306005,40.091268",
+            "destination": "116.379700,39.901251",
+            "city": "北京"
+          },
+          "success": true
+        }
+      ],
+      "execution_time_ms": 44649.779081344604,
+      "metrics": {
+        "success": 1.0,
+        "restaurants_found": 3,
+        "api_calls": 23,
+        "response_time_ms": 44649.779081344604,
+        "efficiency": 0.13043478260869565
+      },
+      "error_message": null
+    }
+  ]
+}
