@@ -45,7 +45,6 @@ wrangler pages project create where-to-eat --production-branch main
 wrangler pages deploy web --project-name where-to-eat
 ```
 
-当前部署地址为 [where-to-eat-8wr.pages.dev](https://where-to-eat-8wr.pages.dev)。需要绑定自己的域名时，在 Cloudflare Dashboard 的 Pages 项目中添加 Custom Domain。
 
 运行架构：
 
