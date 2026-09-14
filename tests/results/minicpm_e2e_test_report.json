@@ -1,0 +1,287 @@
+{
+  "test_date": "2026-09-14T07:01:32.381542",
+  "model": "MiniCPM-V-4.5",
+  "api_endpoint": "https://api.modelbest.cn/v1/chat/completions",
+  "amap_api_key": "2a74be819e0a749654d0...",
+  "summary": {
+    "total_tests": 3,
+    "successful_tests": 3,
+    "success_rate": 1.0,
+    "total_tool_calls": 20,
+    "avg_execution_time_ms": 32785.07606188456
+  },
+  "test_results": [
+    {
+      "success": true,
+      "response": "根据您提供的信息，我为您找到了以下符合您需求的餐厅：\n\n1. 胡大饭馆(簋街三店)\n2. 汉巴味德(北京银座和谐广场店)\n3. 刘记炙子烤肉(虎坊桥店)\n4. 九十九顶毡房\n5. 明签里地标烧烤(顺义店)\n6. 六日都烤牛内脏专门店(总店)\n\n由于您和您的朋友分别从望京和霍营出发，我建议您选择离您最近的餐厅。根据您的坐标，胡大饭馆(簋街三店)距离您较近，您可以选择这里。\n\n如果您有任何其他需求或问题，请随时告诉我。祝您用餐愉快！",
+      "iterations": 2,
+      "tool_calls": [
+        {
+          "tool_name": "maps_geo",
+          "params": {
+            "address": "望京",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_geo",
+          "params": {
+            "address": "霍营",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "destination": "116411.0926,39.9774",
+            "origin": "116.4175,39.9129"
+          },
+          "result_summary": {
+            "status": "0",
+            "has_data": false
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "destination": "116411.0926,39.9774",
+            "origin": "116.4435,39.8627"
+          },
+          "result_summary": {
+            "status": "0",
+            "has_data": false
+          }
+        },
+        {
+          "tool_name": "maps_text_search",
+          "params": {
+            "city": "北京",
+            "keywords": "烤肉"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        }
+      ],
+      "total_tool_calls": 5,
+      "execution_time_ms": 22794.795989990234,
+      "api_stats": {
+        "total_calls": 5,
+        "endpoint_counts": {
+          "geocode/geo": 2,
+          "direction/driving": 2,
+          "place/text": 1
+        },
+        "avg_response_time_ms": 2333.77947807312,
+        "success_rate": 0.6
+      },
+      "test_name": "2人聚餐 - 烤肉"
+    },
+    {
+      "success": true,
+      "response": "<thought>\nI need to identify all the locations mentioned by the user: 国贸, 中关村, and 五道口. Then, I'll use the maps_geo function to get the coordinates for each location. After obtaining the coordinates, I will use maps_direction_driving to calculate the driving time from each location to potential restaurants. I will also use maps_text_search to find suitable restaurants in Beijing that serve Japanese cuisine. Finally, I will recommend a restaurant based on the driving times from each participant's location to ensure fairness.\n</thought>\n<queries>\n{\n  \"name\": \"maps_geo\",\n  \"arguments\": {\n    \"address\": \"国贸\",\n    \"city\": \"北京\"\n  }\n},\n{\n  \"name\": \"maps_geo\",\n  \"arguments\": {\n    \"address\": \"中关村\",\n    \"city\": \"北京\"\n  }\n},\n{\n  \"name\": \"maps_geo\",\n  \"arguments\": {\n    \"address\": \"五道口\",\n    \"city\": \"北京\"\n  }\n},\n{\n  \"name\": \"maps_direction_driving\",\n  \"arguments\": {\n    \"origin\": \"116.4067,39.9082\",\n    \"destination\": \"114.3641,39.9153\"\n  }\n},\n{\n  \"name\": \"maps_direction_driving\",\n  \"arguments\": {\n    \"origin\": \"116.4067,39.9082\",\n    \"destination\": \"116.4169,39.9098\"\n  }\n},\n{\n  \"name\": \"maps_direction_driving\",\n  \"arguments\": {\n    \"origin\": \"116.4067,39.9082\",\n    \"destination\": \"116.4197,39.9066\"\n  }\n},\n{\n  \"name\": \"maps_direction_driving\",\n  \"arguments\": {\n    \"origin\": \"116.4169,39.9098\",\n    \"destination\": \"114.3641,39.9153\"\n  }\n},\n{\n  \"name\": \"maps_direction_driving\",\n  \"arguments\": {\n    \"origin\": \"116.4169,39.9098\",\n    \"destination\": \"116.4197,39.9066\"\n  }\n},\n{\n  \"name\": \"maps_direction_driving\",\n  \"arguments\": {\n    \"origin\": \"116.4197,39.9066\",\n    \"destination\": \"114.3641,39.9153\"\n  }\n},\n{\n  \"name\": \"maps_direction_driving\",\n  \"arguments\": {\n    \"origin\": \"116.4197,39.9066\",\n    \"destination\": \"116.4067,39.9082\"\n  }\n},\n{\n  \"name\": \"maps_text_search\",\n  \"arguments\": {\n    \"city\": \"北京\",\n    \"keywords\": \"日料\"\n  }\n}\n</queries>",
+      "iterations": 1,
+      "tool_calls": [],
+      "total_tool_calls": 0,
+      "execution_time_ms": 12166.114091873169,
+      "api_stats": {
+        "total_calls": 0
+      },
+      "test_name": "3人聚餐 - 日料"
+    },
+    {
+      "success": true,
+      "response": "根据计算，天通苑到南门涮肉(东单店)驾车约90分钟，天通苑到牛街清真满恒記(平安里西大街店)驾车约86分钟，天通苑到聚宝源(牛街创始店)驾车约99分钟，天通苑到海底捞火锅(牡丹园店)驾车约77分钟，天通苑到清真·鸦儿李记·涮肉(什刹海店)驾车约60分钟，天通苑到阳坊胜利涮羊肉(总店)驾车约84分钟。三里屯到南门涮肉(东单店)驾车约23分钟，三里屯到牛街清真满恒記(平安里西大街店)驾车约40分钟，三里屯到聚宝源(牛街创始店)驾车约40分钟，三里屯到海底捞火锅(牡丹园店)驾车约29分钟，三里屯到清真·鸦儿李记·涮肉(什刹海店)驾车约62分钟，三里屯到阳坊胜利涮羊肉(总店)驾车约77分钟。\n\n从公平性（最慢时间最短）的角度来看，天通苑到海底捞火锅(牡丹园店)驾车约77分钟，三里屯到海底捞火锅(牡丹园店)驾车约29分钟，总时间约为106分钟。因此，我推荐海底捞火锅(牡丹园店)作为公平的餐厅选择。",
+      "iterations": 3,
+      "tool_calls": [
+        {
+          "tool_name": "maps_geo",
+          "params": {
+            "address": "天通苑",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_geo",
+          "params": {
+            "address": "三里屯",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_text_search",
+          "params": {
+            "keywords": "火锅",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "destination": "116.421739,39.907405",
+            "origin": "116.422633,40.067359"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "destination": "116.421739,39.907405",
+            "origin": "116.454118,39.935589"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "destination": "116.367609,39.932207",
+            "origin": "116.422633,40.067359"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "destination": "116.367609,39.932207",
+            "origin": "116.454118,39.935589"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "destination": "116.363329,39.886721",
+            "origin": "116.422633,40.067359"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "destination": "116.363329,39.886721",
+            "origin": "116.454118,39.935589"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "destination": "116.368364,39.979011",
+            "origin": "116.422633,40.067359"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "destination": "116.368364,39.979011",
+            "origin": "116.454118,39.935589"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "destination": "116.393695,39.939095",
+            "origin": "116.422633,40.067359"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "destination": "116.393695,39.939095",
+            "origin": "116.454118,39.935589"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "destination": "116.140572,40.137530",
+            "origin": "116.422633,40.067359"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "destination": "116.140572,40.137530",
+            "origin": "116.454118,39.935589"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        }
+      ],
+      "total_tool_calls": 15,
+      "execution_time_ms": 63394.31810379028,
+      "api_stats": {
+        "total_calls": 15,
+        "endpoint_counts": {
+          "geocode/geo": 2,
+          "place/text": 1,
+          "direction/driving": 12
+        },
+        "avg_response_time_ms": 2324.9245325724282,
+        "success_rate": 1.0
+      },
+      "test_name": "2人聚餐 - 火锅"
+    }
+  ]
+}

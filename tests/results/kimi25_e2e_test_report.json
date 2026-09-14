@@ -1,0 +1,513 @@
+{
+  "test_date": "2026-09-05T12:25:30.364978",
+  "model": "Kimi 2.5 (moonshotai/kimi-k2.5 via ZenMux)",
+  "api_endpoint": "https://zenmux.ai/api/v1/chat/completions",
+  "amap_api_key": "2a74be819e0a749654d0...",
+  "summary": {
+    "total_tests": 3,
+    "successful_tests": 2,
+    "success_rate": 0.6666666666666666,
+    "total_tool_calls": 39,
+    "avg_execution_time_ms": 130554.28592363994
+  },
+  "test_results": [
+    {
+      "success": false,
+      "response": "达到最大迭代次数",
+      "iterations": 3,
+      "tool_calls": [
+        {
+          "tool_name": "maps_geo",
+          "params": {
+            "address": "望京",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_geo",
+          "params": {
+            "address": "霍营",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_text_search",
+          "params": {
+            "keywords": "烤肉",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.367907,40.040364"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.367907,40.040364"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.442585,39.924238"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.442585,39.924238"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.410500,39.925463"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.410500,39.925463"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.470293,39.996171",
+            "destination": "116.463059,39.889782"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.368207,40.076214",
+            "destination": "116.463059,39.889782"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        }
+      ],
+      "total_tool_calls": 11,
+      "execution_time_ms": 143869.1680431366,
+      "api_stats": {
+        "total_calls": 11,
+        "endpoint_counts": {
+          "geocode/geo": 2,
+          "place/text": 1,
+          "direction/driving": 8
+        },
+        "avg_response_time_ms": 1829.7967910766602,
+        "success_rate": 1.0
+      },
+      "test_name": "2人聚餐 - 烤肉"
+    },
+    {
+      "success": true,
+      "response": "根据三个出发地到三家精选日料餐厅的公交地铁路线时间对比（取各路线中最快方案），结果如下：\n\n| 餐厅 | 国贸 | 中关村 | 五道口 | **最慢时间** |\n|------|------|--------|--------|-------------|\n| **一风堂(东方新天地店)** | ~19分钟 | ~53分钟 | ~52分钟 | **~53分钟** |\n| **鈴木食堂(杨梅竹店)** | ~39分钟 | ~61分钟 | ~58分钟 | **~61分钟** |\n| **京都里日式料理(崇文门店)** | ~27分钟 | ~54分钟 | ~52分钟 | **~54分钟** |\n\n---\n\n### 🏆 推荐结果\n\n**首选：一风堂(东方新天地店)** ⭐\n- **位置**：王府井东方新天地LG层（地铁1号线王府井站）\n- **人均**：约68元\n- **营业时间**：10:00-21:30\n- **评分**：4.6分\n- **优势**：三人中最慢到达时间最短（约53分钟），对中关村出发的朋友最友好。国贸的朋友只需19分钟直达。位于王府井核心商圈，地铁1号线直达，晚高峰也最稳妥。\n- **推荐菜**：特制赤丸、白丸拉面、南蛮炸鸡\n\n**备选：京都里日式料理(崇文门店)**\n- **位置**：崇文门新侨饭店A座2层（地铁2/5号线崇文门站）\n- **人均**：约147元\n- **营业时间**：10:00-14:00, 17:00-22:30\n- **评分**：4.5分\n- **特点**：略偏高端，有刺身拼盘、蒜蓉生蚝等，最慢时间也只比一风堂多1分钟。如果想吃得更正式一些可以选这家。\n\n---\n\n### ⏰ 出发时间建议\n\n要**19:00到达餐厅**：\n- **国贸出发**：约18:35出发（地铁1号线直达）\n- **中关村出发**：约18:05出发（地铁4号线→西单转1号线）\n- **五道口出发**：约18:05出发（地铁13号线→西直门转2号线→复兴门转1号线，或10号线转8号线）\n\n> 💡 晚高峰建议优先选择地铁出行，一风堂所在的王府井/东单区域是1号线核心站点，车次密集、准点率高，最不容易受路况影响。",
+      "iterations": 3,
+      "tool_calls": [
+        {
+          "tool_name": "maps_geo",
+          "params": {
+            "address": "国贸",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_geo",
+          "params": {
+            "address": "中关村",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_geo",
+          "params": {
+            "address": "五道口",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_text_search",
+          "params": {
+            "keywords": "日料",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_transit",
+          "params": {
+            "origin": "116.458850,39.909860",
+            "destination": "116.412055,39.909458",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_transit",
+          "params": {
+            "origin": "116.318620,39.980047",
+            "destination": "116.412055,39.909458",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_transit",
+          "params": {
+            "origin": "116.339311,39.991327",
+            "destination": "116.412055,39.909458",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_transit",
+          "params": {
+            "origin": "116.458850,39.909860",
+            "destination": "116.393610,39.895977",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_transit",
+          "params": {
+            "origin": "116.318620,39.980047",
+            "destination": "116.393610,39.895977",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_transit",
+          "params": {
+            "origin": "116.339311,39.991327",
+            "destination": "116.393610,39.895977",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_transit",
+          "params": {
+            "origin": "116.458850,39.909860",
+            "destination": "116.416698,39.901683",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_transit",
+          "params": {
+            "origin": "116.318620,39.980047",
+            "destination": "116.416698,39.901683",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_transit",
+          "params": {
+            "origin": "116.339311,39.991327",
+            "destination": "116.416698,39.901683",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        }
+      ],
+      "total_tool_calls": 13,
+      "execution_time_ms": 105837.34703063965,
+      "api_stats": {
+        "total_calls": 13,
+        "endpoint_counts": {
+          "geocode/geo": 3,
+          "place/text": 1,
+          "direction/transit/integrated": 9
+        },
+        "avg_response_time_ms": 1952.6857596177322,
+        "success_rate": 1.0
+      },
+      "test_name": "3人聚餐 - 日料"
+    },
+    {
+      "success": true,
+      "response": "根据从天通苑和三里屯到各候选火锅餐厅的驾车时间计算，我为您做了公平性分析。以下是结果：\n\n| 餐厅 | 天通苑时间 | 三里屯时间 | 最大时间 | 时间差 |\n|------|-----------|-----------|---------|--------|\n| 南门涮肉(东单店) | 71分钟 | 22分钟 | 71分钟 | 49分钟 |\n| **鸦儿李记(和平里店)** | **37分钟** | **20分钟** | **37分钟** | 17分钟 |\n| **海底捞(牡丹园店)** | 38分钟 | 27分钟 | 38分钟 | **11分钟** |\n| 日坛涮肉(日坛公园店) | 58分钟 | 17分钟 | 58分钟 | 41分钟 |\n| 鸦儿李记(什刹海店) | 50分钟 | 36分钟 | 50分钟 | 14分钟 |\n| 南门涮肉(后海店) | 54分钟 | 29分钟 | 54分钟 | 25分钟 |\n\n---\n\n### 🏆 最公平推荐：**清真·鸦儿李记·涮肉(和平里店)**\n\n**推荐理由：**\n- ✅ **最大时间最短（37分钟）**：无论您朋友从哪边出发，最晚到达的只需要37分钟，是所有餐厅中\"等待上限\"最低的\n- ✅ 对天通苑非常友好：仅37分钟（走北苑路直达）\n- ✅ 对三里屯也很近：仅20分钟（走东直门外大街）\n- 地址：东城区地坛北里东区1号楼（和平里北街地铁站D西南口步行80米）\n- 评分：4.8分 | 人均：约87元 | 特色：老北京铜锅涮肉、手切鲜羊肉、烧饼\n\n---\n\n### 🥈 次优推荐：**海底捞火锅(牡丹园店)**\n\n如果您更看重**双方时间差最小**（最均衡）：\n- 天通苑38分钟 vs 三里屯27分钟，仅相差11分钟\n- 地址：海淀区花园路2号3号楼一层（牡丹园附近）\n- 评分：4.7分 | 人均：约120元\n\n---\n\n**结论**：从\"不让任何一方等太久\"的公平原则出发，**鸦儿李记(和平里店)**是最佳选择——它位于两地中间偏北的位置，通过北苑路和二环/东直门一线连接两地，路程最均衡，且性价比和口碑都很高。",
+      "iterations": 3,
+      "tool_calls": [
+        {
+          "tool_name": "maps_geo",
+          "params": {
+            "address": "天通苑",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_geo",
+          "params": {
+            "address": "三里屯",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_text_search",
+          "params": {
+            "keywords": "火锅",
+            "city": "北京"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.421739,39.907405"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.454118,39.935589",
+            "destination": "116.421739,39.907405"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.418019,39.958373"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.454118,39.935589",
+            "destination": "116.418019,39.958373"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.368364,39.979011"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.454118,39.935589",
+            "destination": "116.368364,39.979011"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.446179,39.914614"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.454118,39.935589",
+            "destination": "116.446179,39.914614"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.393695,39.939095"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.454118,39.935589",
+            "destination": "116.393695,39.939095"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.422633,40.067359",
+            "destination": "116.393887,39.938050"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        },
+        {
+          "tool_name": "maps_direction_driving",
+          "params": {
+            "origin": "116.454118,39.935589",
+            "destination": "116.393887,39.938050"
+          },
+          "result_summary": {
+            "status": "1",
+            "has_data": true
+          }
+        }
+      ],
+      "total_tool_calls": 15,
+      "execution_time_ms": 141956.34269714355,
+      "api_stats": {
+        "total_calls": 15,
+        "endpoint_counts": {
+          "geocode/geo": 2,
+          "place/text": 1,
+          "direction/driving": 12
+        },
+        "avg_response_time_ms": 2141.1139329274497,
+        "success_rate": 1.0
+      },
+      "test_name": "2人聚餐 - 火锅"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "test_summary": {
-    "test_date": "2026-09-05T10:47:52.290740",
+    "test_date": "2026-09-11T15:27:39.519686",
     "total_test_cases": 10,
     "models_tested": [
       "MiniCPM5-2B",
@@ -25,28 +25,28 @@
       "param_accuracy": 0.843,
       "sequence_accuracy": 0.6667460317460318,
       "error_recovery": 0.95,
-      "response_time_ms": 127.75421142578125,
+      "response_time_ms": 127.52680778503418,
       "context_retention": 0.985,
       "compliance_score": 0.898,
-      "weighted_score": 1356.787669813368
+      "weighted_score": 1354.5136334058973
     },
     "Kimi-2.5": {
       "tool_accuracy": 0.6251746031746033,
       "param_accuracy": 0.843,
       "sequence_accuracy": 0.7167460317460318,
       "error_recovery": 0.9800000000000001,
-      "response_time_ms": 143.26751232147217,
+      "response_time_ms": 142.97993183135986,
       "context_retention": 0.985,
       "compliance_score": 0.898,
-      "weighted_score": 1514.3706787702772
+      "weighted_score": 1511.4948738691542
     }
   },
   "comparison": {
     "summary": {
-      "minicpm_weighted_score": 1356.787669813368,
-      "kimi_weighted_score": 1514.3706787702772,
+      "minicpm_weighted_score": 1354.5136334058973,
+      "kimi_weighted_score": 1511.4948738691542,
       "winner": "Kimi 2.5",
-      "score_difference": 157.58300895690923
+      "score_difference": 156.98124046325688
     },
     "detailed_comparison": {
       "tool_accuracy": {
@@ -74,9 +74,9 @@
         "winner": "Kimi"
       },
       "response_time": {
-        "minicpm_ms": 127.75421142578125,
-        "kimi_ms": 143.26751232147217,
-        "difference_ms": 15.513300895690918,
+        "minicpm_ms": 127.52680778503418,
+        "kimi_ms": 142.97993183135986,
+        "difference_ms": 15.453124046325684,
         "winner": "MiniCPM"
       },
       "context_retention": {
@@ -108,7 +108,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 1.0,
         "error_recovery": 1.0,
-        "response_time_ms": 51.12910270690918,
+        "response_time_ms": 51.0869026184082,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -121,7 +121,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 0.3333333333333333,
         "error_recovery": 1.0,
-        "response_time_ms": 102.35190391540527,
+        "response_time_ms": 102.32090950012207,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -134,7 +134,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 1.0,
         "error_recovery": 1.0,
-        "response_time_ms": 52.08587646484375,
+        "response_time_ms": 51.21493339538574,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -147,7 +147,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 0.6,
         "error_recovery": 1.0,
-        "response_time_ms": 152.94218063354492,
+        "response_time_ms": 152.90093421936035,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -160,7 +160,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 0.75,
         "error_recovery": 1.0,
-        "response_time_ms": 153.3050537109375,
+        "response_time_ms": 152.93121337890625,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -173,7 +173,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 0.75,
         "error_recovery": 0.5,
-        "response_time_ms": 153.57398986816406,
+        "response_time_ms": 151.77321434020996,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -186,7 +186,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 0.42857142857142855,
         "error_recovery": 1.0,
-        "response_time_ms": 153.46670150756836,
+        "response_time_ms": 153.19085121154785,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -199,7 +199,7 @@
         "param_accuracy": 0.78,
         "sequence_accuracy": 0.75,
         "error_recovery": 1.0,
-        "response_time_ms": 153.1047821044922,
+        "response_time_ms": 153.37300300598145,
         "context_retention": 0.85,
         "compliance_score": 0.88,
         "raw_data": {}
@@ -212,7 +212,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 0.5555555555555556,
         "error_recovery": 1.0,
-        "response_time_ms": 255.1736831665039,
+        "response_time_ms": 255.2342414855957,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -225,7 +225,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 0.5,
         "error_recovery": 1.0,
-        "response_time_ms": 50.40884017944336,
+        "response_time_ms": 51.24187469482422,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -240,7 +240,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 1.0,
         "error_recovery": 1.0,
-        "response_time_ms": 51.163673400878906,
+        "response_time_ms": 51.158905029296875,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -253,7 +253,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 0.3333333333333333,
         "error_recovery": 1.0,
-        "response_time_ms": 153.7621021270752,
+        "response_time_ms": 153.04803848266602,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -266,7 +266,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 1.0,
         "error_recovery": 1.0,
-        "response_time_ms": 51.32007598876953,
+        "response_time_ms": 51.14388465881348,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -279,7 +279,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 0.6,
         "error_recovery": 1.0,
-        "response_time_ms": 152.43816375732422,
+        "response_time_ms": 153.58591079711914,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -292,7 +292,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 1.0,
         "error_recovery": 1.0,
-        "response_time_ms": 205.10196685791016,
+        "response_time_ms": 204.71906661987305,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -305,7 +305,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 1.0,
         "error_recovery": 0.8,
-        "response_time_ms": 205.0340175628662,
+        "response_time_ms": 203.9322853088379,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -318,7 +318,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 0.42857142857142855,
         "error_recovery": 1.0,
-        "response_time_ms": 153.20515632629395,
+        "response_time_ms": 153.81360054016113,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -331,7 +331,7 @@
         "param_accuracy": 0.78,
         "sequence_accuracy": 0.75,
         "error_recovery": 1.0,
-        "response_time_ms": 153.71346473693848,
+        "response_time_ms": 153.05805206298828,
         "context_retention": 0.85,
         "compliance_score": 0.88,
         "raw_data": {}
@@ -344,7 +344,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 0.5555555555555556,
         "error_recovery": 1.0,
-        "response_time_ms": 255.61761856079102,
+        "response_time_ms": 254.3478012084961,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}
@@ -357,7 +357,7 @@
         "param_accuracy": 0.85,
         "sequence_accuracy": 0.5,
         "error_recovery": 1.0,
-        "response_time_ms": 51.31888389587402,
+        "response_time_ms": 50.99177360534668,
         "context_retention": 1.0,
         "compliance_score": 0.9,
         "raw_data": {}

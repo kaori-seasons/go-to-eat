@@ -1,0 +1,28 @@
+name: Orchestrator CI
+
+on:
+  push:
+    paths: ["orchestrator/**", "tests/test_orchestrator*.py"]
+  pull_request:
+    paths: ["orchestrator/**", "tests/test_orchestrator*.py"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: pip install pytest httpx
+      - name: Run orchestrator tests
+        run: python -m pytest tests/test_orchestrator*.py -v --tb=short
+      - name: Test summary
+        if: always()
+        run: |
+          echo "=== Test Summary ==="
+          python -m pytest tests/test_orchestrator*.py --tb=no -q 2>&1 | tail -3
